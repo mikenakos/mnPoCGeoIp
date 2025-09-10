@@ -1,0 +1,3 @@
+﻿Scaffold Schema
+===============
+dotnet ef dbcontext scaffold "Server=(localdb)\MSSQLLocalDB;Database=mnakosPoCGeoIpDb;Trusted_Connection=True" Microsoft.EntityFrameworkCore.SqlServer --context AppDbContext --context-dir DataBase --output-dir Models --use-database-names --force
