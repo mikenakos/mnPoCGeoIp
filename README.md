@@ -43,11 +43,13 @@ each batch in the background.
 >Following that approach, we avoid having a monolithic service and the
 most important, don't stress the API with background processing.
 
-### Note 2
-
 >To feed the background processing thread I have used
 System.Threading.Channels as a pipeline, to simulate the publish to the
 message broker
+
+### Note 2
+>I choose not to use the code-first approach with EF Core, since if this would run in a production system and there were more than one backend services like this (behind a load-balancer), I think it could be better to have a single source of truth for the database schema, instead of each service trying to create/update the schema on its own, on cases like DB upgrade.
+In all of the projects I have worked in the past, I shape the code to be backwards compatible with the existing database schema.
 
 ### Note 3
 
