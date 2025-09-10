@@ -1,4 +1,4 @@
-# PoC assignment project \[mnPoCGeoIp\]
+# PoC assignment project mnPoCGeoIp
 
 This is a Proof-of-Concept project that performs IP Geolocation lookups
 by Mike Nakos
@@ -28,6 +28,7 @@ It consists of 3 endpoints
 4.  In the appsettings.json file set the property
     "provider_geoip_access_token" with your own ipbase.com access
     token/api key
+
 
 ## Notes
 
